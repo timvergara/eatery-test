@@ -1,0 +1,102 @@
+// reset.scss
+
+// Define variables for primary colors
+$primary-color-light: #FF8A0033; // Light orange (with transparency)
+$primary-color-accent: #FFCFD2; // Soft pink
+$primary-color-main: #FF8A00;   // Bright orange
+$primary-color-main-hover: #fa9e23;   // Bright orange hover
+$color-white: #FFFFFF;          // White
+$color-black: #000000;          // Black
+
+// Define variables for fonts
+$font-header: "Roboto Condensed", sans-serif; // For headers
+$font-body: "Roboto Flex", sans-serif;        // For normal/usual text
+
+/* Box-sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins and paddings */
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+figure, dl, dd,
+ul, ol, li,
+fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default fonts */
+body {
+  font-family: $font-body;
+  line-height: 1.5; /* Ensures good readability */
+  color: $color-black; /* Default text color */
+  background-color: $color-white; /* Default background */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-header;
+  font-weight: 700; /* Makes headers bold by default */
+}
+
+/* Remove list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default border and background */
+img, svg, video, canvas, audio,
+iframe, embed, object {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%; /* Responsive media */
+  height: auto;
+}
+
+/* Reset input elements */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  background: none;
+  box-shadow: none;
+  appearance: none;
+}
+
+/* Remove link underlines and reset color */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove quotes for blockquote and q */
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+}
+
+/* Reset tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 0;
+}
